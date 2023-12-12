@@ -18,7 +18,7 @@ There is a single test in `unit_tests/tests/`.  Right now it will pass because t
 using [Arduino-CLI](https://arduino.github.io/arduino-cli/)
 
 1. Set environment variables (for convenience):
-`FQBN=arduino:esp32:nano_nora && PORT=</dev/ttyUSB0 OR COM3> FILENAME=blink-arduino-cpputest.ino`
+`FQBN=arduino:esp32:nano_nora && PORT=</dev/ttyUSB0 OR COM3> && FILENAME=blink-arduino-cpputest.ino`
 
 2.Compile
 `arduino-cli compile --fqbn $FQBN $FILENAME --output-dir build`
