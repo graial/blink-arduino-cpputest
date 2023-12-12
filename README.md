@@ -10,7 +10,7 @@ It is failing to compile right now because it is unable to `#import "ArduinoFake
 
 There is a single test in `unit_tests/tests/`.  Right now it will pass because the following 2 lines (suggested on ArduinoFake's getting started section) are commented out:
 
-`#include "ArduinoFake.h"
+`#include "ArduinoFake.h" \n
 using namespace fakeit;`
 
 
