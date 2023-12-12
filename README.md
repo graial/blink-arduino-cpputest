@@ -17,7 +17,7 @@ There is a single test in `unit_tests/tests/`.  Right now it will pass because t
 ## Build and compile
 using [Arduino-CLI](https://arduino.github.io/arduino-cli/)
 
-1. Set environment variables (for convenience):
+1. Set environment variables (this FQBN is for the [ESP32-nano](https://docs.arduino.cc/hardware/nano-esp32)):
 `FQBN=arduino:esp32:nano_nora && PORT=</dev/ttyUSB0 OR COM3> && FILENAME=blink-arduino-cpputest.ino`
 
 2.Compile
@@ -27,7 +27,7 @@ using [Arduino-CLI](https://arduino.github.io/arduino-cli/)
 `arduino-cli upload -p $PORT --fqbn $FQBN $FILENAME --input-dir build`
 
 You can also chain the commands together like so:
-`arduino-cli compile --fqbn $FQBN $FILENAME --output-dir build && arduino-cli upload -p $PORT --fqbn $FQBN $FILENAME --input-dir build && arduino-cli monitor -p $PORT`
+`arduino-cli compile --fqbn $FQBN $FILENAME --output-dir build && arduino-cli upload -p $PORT --fqbn $FQBN $FILENAME --input-dir build`
 
 in case of this error on Linux:
 `dfu-util: No DFU capable USB device available`
