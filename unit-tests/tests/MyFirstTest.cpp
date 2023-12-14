@@ -1,8 +1,8 @@
 #include "CppUTest/TestHarness.h"
 
 //Compile error Failure occurs when uncommenting these 2 lines
-#include "ArduinoFake.h"
-using namespace fakeit;
+// #include "ArduinoFake.h"
+// using namespace fakeit;
 
 extern "C"
 {
